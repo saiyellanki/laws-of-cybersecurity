@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+<title>About — Sai Yellanki | Cybersecurity & AI Risk Architect</title>
+<meta name="description" content="Sai Yellanki — Cybersecurity Risk Assurance & AI Governance professional. IEEE-published privacy researcher, CISA, ISO 27001 Lead Auditor, and builder of enterprise AI risk frameworks." />
+<meta name="theme-color" content="#0A0D10" />
+
+<meta property="og:title" content="Sai Yellanki — Cybersecurity & AI Risk Architect" />
+<meta property="og:description" content="Cybersecurity Risk Assurance, AI Governance, and Data Privacy professional." />
+<meta property="og:type" content="profile" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">§</span>
+      <span class="brand-text">Laws of <span class="dim">Cyber</span>security</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">The Laws</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="profile-hero">
+    <div class="monogram-badge" id="monogram" aria-hidden="true"></div>
+    <div>
+      <h1 class="profile-name" id="profile-name"></h1>
+      <div class="profile-title-row">
+        <span class="profile-title" id="profile-title"></span>
+        <span class="sep">·</span>
+        <span class="profile-location" id="profile-location"></span>
+      </div>
+      <p class="profile-credentials" id="profile-credentials"></p>
+      <p class="profile-statement" id="profile-statement"></p>
+      <p class="profile-bio" id="profile-bio"></p>
+      <div class="profile-links" id="profile-links"></div>
+    </div>
+  </section>
+
+  <section class="about-section" aria-labelledby="arc-heading">
+    <div class="section-head">
+      <span class="section-eyebrow">01</span>
+      <h2 class="section-title" id="arc-heading">The Career Arc</h2>
+    </div>
+    <p style="color:var(--text-dim); font-size:14px; margin: -12px 0 26px; max-width:70ch;">
+      The throughline: building principled governance frameworks before the market fully understood they were needed. It's happened three times.
+    </p>
+    <div class="arc-timeline" id="arc-timeline"></div>
+  </section>
+
+  <section class="about-section" aria-labelledby="cases-heading">
+    <div class="section-head">
+      <span class="section-eyebrow">02</span>
+      <h2 class="section-title" id="cases-heading">Selected Case Files</h2>
+    </div>
+    <div class="controls" style="position:static; padding: 0 0 24px; background:none;">
+      <div class="filter-row" id="win-filter-row" role="group" aria-label="Filter case files by domain"></div>
+    </div>
+    <div class="law-grid" id="win-grid"></div>
+  </section>
+
+  <section class="about-section" aria-labelledby="creds-heading">
+    <div class="section-head">
+      <span class="section-eyebrow">03</span>
+      <h2 class="section-title" id="creds-heading">Credentials</h2>
+    </div>
+    <ul class="cert-primary" id="cert-primary"></ul>
+    <div class="cert-other" id="cert-other"></div>
+  </section>
+
+  <section class="about-section" aria-labelledby="edu-heading">
+    <div class="section-head">
+      <span class="section-eyebrow">04</span>
+      <h2 class="section-title" id="edu-heading">Education & Research</h2>
+    </div>
+    <div class="info-card">
+      <p class="info-card-h">Education</p>
+      <p id="edu-degree" style="font-weight:600;"></p>
+      <p id="edu-school" class="dim"></p>
+      <p id="edu-coursework" class="dim"></p>
+    </div>
+    <div class="info-card">
+      <p class="info-card-h">Peer-Reviewed Publication</p>
+      <p id="pub-citation"></p>
+      <p id="pub-doi" class="dim"></p>
+      <p id="pub-note" class="dim"></p>
+    </div>
+  </section>
+
+  <section class="about-section" aria-labelledby="vol-heading">
+    <div class="section-head">
+      <span class="section-eyebrow">05</span>
+      <h2 class="section-title" id="vol-heading">Volunteering & Community</h2>
+    </div>
+    <div class="volunteer-list" id="volunteer-list"></div>
+  </section>
+
+</main>
+
+<div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"></div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>
+      This page summarizes public-facing professional background. Specific employer and client names are withheld in accordance with standard confidentiality practice for audit and consulting engagements.
+    </p>
+    <p>
+      Back to <a href="index.html">Laws of Cybersecurity</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="js/about-data.js"></script>
+<script src="js/about-app.js"></script>
+</body>
+</html>

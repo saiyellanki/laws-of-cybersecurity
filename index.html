@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+<title>Laws of Cybersecurity — Principles of Security & Privacy</title>
+<meta name="description" content="An extensive, referenced collection of established cybersecurity, cryptography, and privacy laws — from Kerckhoffs's Principle to the GDPR's Purpose Limitation, verified against their original sources." />
+<meta name="theme-color" content="#0A0D10" />
+
+<meta property="og:title" content="Laws of Cybersecurity" />
+<meta property="og:description" content="An extensive, referenced collection of established cybersecurity, cryptography, and privacy laws." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#" class="brand">
+      <span class="brand-mark" aria-hidden="true">§</span>
+      <span class="brand-text">Laws of <span class="dim">Cyber</span>security</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" class="active">The Laws</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="topbar-meta">
+      <span><span class="pulse-dot" aria-hidden="true"></span>SOURCES VERIFIED</span>
+      <span id="topbar-count-wrap"><span id="total-count-mirror"></span></span>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="hero">
+    <span class="hero-stamp">DOSSIER · UNCLASSIFIED · REFERENCE EDITION</span>
+    <h1 class="hero-title">
+      <span class="redact" style="--d:0.1s">The principles that govern</span><br/>
+      <span class="redact" style="--d:0.3s">security, trust, and privacy.</span>
+    </h1>
+    <p class="hero-sub">
+      A field reference of established laws, models, and dictums from cryptography, systems security, digital forensics, and data protection law — each traced to its origin and explained in plain terms.
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num" id="total-count">0</span><span class="label">Laws Catalogued</span></div>
+      <div class="hero-stat"><span class="num" id="cat-count">0</span><span class="label">Domains</span></div>
+      <div class="hero-stat"><span class="num">1883–2014</span><span class="label">Span of Origin</span></div>
+    </div>
+  </section>
+
+  <div class="controls">
+    <div class="search-row">
+      <div class="search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="search-input" placeholder="Search laws, e.g. 'least privilege', 'GDPR', 'Kerckhoffs'…" aria-label="Search laws" />
+      </div>
+      <span class="result-count" id="result-count"></span>
+    </div>
+    <div class="filter-row" id="filter-row" role="group" aria-label="Filter by domain"></div>
+  </div>
+
+  <section class="grid-section">
+    <div class="law-grid" id="law-grid" aria-live="polite"></div>
+  </section>
+</main>
+
+<div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"></div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>
+      Laws of Cybersecurity is an independent reference compiling established principles from published security, cryptography, and privacy-law literature. Entries note original formulators where a single source exists. This is an educational reference, not legal advice — consult qualified counsel for compliance matters.
+    </p>
+    <p>
+      Companion to <a href="https://lawsofsoftwareengineering.com" target="_blank" rel="noopener">Laws of Software Engineering</a>. Built for static hosting.
+    </p>
+  </div>
+</footer>
+
+<script src="js/laws-data.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.getElementById("total-count-mirror").textContent = LAWS.length + " ENTRIES";
+</script>
+</body>
+</html>
